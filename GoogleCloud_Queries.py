@@ -3,7 +3,7 @@ from google.oauth2 import service_account
 credentials = service_account.Credentials.from_service_account_file('E:\\BSc Computer Engineering\\semester5\\database\\taskproj-398609-2926bb2e71c9.json')
 
 
-project_id = 'taskproj-398609'
+project_id = 'your id'
 
 client = bigquery.Client(credentials= credentials,project=project_id)
 query =("""
@@ -50,5 +50,6 @@ doc.build(elements)
 import webbrowser
 
 webbrowser.open("output.pdf")
+
 
 
